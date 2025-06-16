@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoodAI</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="banner bg-hero-pattern">
+            <nav class="navigation-menu">
+                <div class="navigation-menu__overlay" onclick="toggleMenuClicked()"></div>
+                <button type="button" class="hamburger-menu" onclick="toggleMenuClicked()">
+                    <span class="material-icons" id="open-icon"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M2 8a1 1 0 0 1 1-1h10.308a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm0-4a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm0 4a1 1 0 0 1 1-1h10.308a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Z" clip-rule="evenodd"/></svg></span>
+                    <span class="material-icons" id="close-icon"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 16 16"><path fill="currentColor" d="m3.5 2.086l4.5 4.5l4.5-4.5L13.914 3.5L9.414 8l4.5 4.5l-1.414 1.414l-4.5-4.5l-4.5 4.5L2.086 12.5l4.5-4.5l-4.5-4.5z"/></svg></span>
+                </button>
+                <img src="./assets/logo.png" alt="" class="log site-identity-logo">
+                <section class="navigation-menu__labels">
+                    <a href="#service" class="lnk">Services</a>
+                    <a href="#philo" class="lnk">Philosophy</a>
+                    <a href="./contact.html" class="btn-3" id="black">Let's Talk</a>
+                </section>
+            </nav>
+            <script>
+                const toggleMenuClicked = () => {
+                    const body = document.body;
+                    const openIcon = document.getElementById("open-icon");
+                    const closeIcon = document.getElementById("close-icon");
+
+                    body.classList.toggle("open");
+
+
+                    if (body.classList.contains("open")) {
+                        openIcon.style.display = "none";
+                        closeIcon.style.display = "flex";
+                    } else {
+                        openIcon.style.display = "flex";
+                        closeIcon.style.display = "none";
+                    }
+                };
+
+                // Add scroll event to change background
+                window.addEventListener("scroll", () => {
+                    let dams = document.getElementsByClassName("lnk")
+                    const nav = document.querySelector("nav");
+                    if (window.scrollY >= 50) {
+                        nav.classList.add("scrolled");
+                        dams.classList.add("anchar")
+                    } else {
+                        nav.classList.remove("scrolled");
+                    }
+                });
+            </script>
+            <h1>AI Solutions That Empower Your Business.</h1>
+            <p><strong><span>goodAI</span></strong> helps businesses harness AI with ease—empowering you with
+                automation, content creation, and AI-driven strategies that scale.</p>
+            <div class="banner-btn">
+                <a href="./contact.html" class="btn-1">Let's Talk</a>
+                <a href="#service" class="btn-2">Explore Our Services</a>
+            </div>
+        </section>
+        <section class="Philosophy" id="philo">
+            <h3>AI Philosophy</h3>
+            <p class="para">AI isn't just another advancement—it's a transformative force that, when applied
+                effectively, becomes a competitive advantage. We focus on practical, ethical AI applications that
+                empower businesses without adding unnecessary complexity. <strong><span>goodAI</span></strong> stands
+                for:</p>
+            <div class="p-container flex">
+                <div class="p-item1 p-w">
+                    <div class="p1-border borders"></div>
+                    <h4 class="p-h1">Clarity
+                        over Confusion</h4>
+                    <p>AI should simplify, not overwhelm.</p>
+                </div>
+                <div class="p-item2 p-w">
+                    <div class="p2-border borders"></div>
+                    <h4 class="p-h2">Strategy
+                        over Gimmicks</h4>
+                    <p>We prioritize real-world impact over trends.</p>
+                </div>
+                <div class="p-item3 p-w">
+                    <div class="p3-border borders"></div>
+                    <h4 class="p-h3">Scalability
+                        over Shortcuts</h4>
+                    <p>AI should help businesses grow sustainably.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="service" id="service">
+            <div class="service-content">
+                <h3>AI Services Tailored to Your Needs</h3>
+                <p>We make AI work for you—without the technical headaches. Explore our solutions below to find out how
+                    <strong><span>goodAI</span></strong> can automate workflows, enhance content, and provide powerful
+                    insights for your business.</p>
+            </div>
+            <div class="service-cont flex">
+                <div class="service-item">
+                    <h3>autom<span class="ai">AI</span>tion</h3>
+                    <h4>Smarter Business Operations</h4>
+                    <p>AI-powered automation streamlines workflows and eliminates repetitive tasks.</p>
+
+                    <div class="key-service benefit">
+                        <h5>Key Benefits:</h5>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Saves time</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Increases efficiency</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Reduces human error</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="key-service case">
+                        <h5>Use Cases:</h5>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>AI-driven customer support</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Automated data processing</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Workflow automation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <h3>sc<span class="ai">AI</span>le</h3>
+                    <h4>AI-Powered Content & Growth</h4>
+                    <p>Create high-quality, engaging content at scale with AI-assisted content creation.</p>
+
+                    <div class="key-service benefit">
+                        <h5>Key Benefits:</h5>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Generates optimized content quickly</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Enhances SEO</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Improves engagement</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="key-service case">
+                        <h5>Use Cases:</h5>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>AI-generated blog posts</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Automated video scripting</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Social media scheduling</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <h3>pl<span class="ai">AI</span>book</h3>
+                    <h4>AI Roadmaps for Success</h4>
+                    <p>AI Roadmaps for Success</p>
+
+                    <div class="key-service benefit">
+                        <h5>Key Benefits:</h5>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Clear AI integration strategy</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Step-by-step execution plans</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Scalable growth</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="key-service case">
+                        <h5>Use Cases:</h5>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>AI adoption roadmaps</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Business process optimization</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Industry-specific AI implementation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <h3>educ<span class="ai">AI</span>tion</h3>
+                    <h4>AI Training & Workshops</h4>
+                    <p>Equip your team with the knowledge to use AI effectively through hands-on training sessions.</p>
+
+                    <div class="key-service benefit">
+                        <h5>Key Benefits:</h5>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>AI literacy</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Strategic AI adoption</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Team efficiency</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="key-service case">
+                        <h5>Use Cases:</h5>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Live AI training for leaders and teams</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Industry best practices</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>AI implementation workshops</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <h3>d<span class="ai">AI</span>ta</h3>
+                    <h4>AI-Powered Data & Analytics</h4>
+                    <p>Leverage AI to extract valuable insights, predict trends, and make informed business decisions.
+                    </p>
+
+                    <div class="key-service benefit">
+                        <h5>Key Benefits:</h5>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Data-driven decision-making</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Competitive analysis</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Predictive insights</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="key-service case">
+                        <h5>Use Cases:</h5>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Market research</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Customer segmentation</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>AI-driven forecasting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <h3>cre<span class="ai">AI</span>tive</h3>
+                    <h4>AI-Enhanced Creativity & Branding</h4>
+                    <p>Use AI to generate fresh ideas, automate branding, and accelerate creative production.</p>
+
+                    <div class="key-service  benefit">
+                        <h5>Key Benefits:</h5>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>AI-assisted ideation</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Branding at scale</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Creative efficiency</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="key-service case">
+                        <h5>Use Cases:</h5>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>AI-powered ad creatives</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>Automated brand design</p>
+                            </div>
+                        </div>
+                        <div class="key">
+                            <div class="key-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-check"
+                                    data-lov-id="src/components/ServiceCard.tsx:69:18" data-lov-name="Check"
+                                    data-component-path="src/components/ServiceCard.tsx" data-component-line="69"
+                                    data-component-file="ServiceCard.tsx" data-component-name="Check"
+                                    data-component-content="%7B%7D">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div class="key-point">
+                                <p>AI-driven video production</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+
+            <div class="flex footer bod">
+                <div class="foot-1">
+                    <img src="./assets/logo.png" alt="" class=" log2 site-identity-logo">
+                    <p>Empowering businesses with practical, ethical AI solutions that drive growth and innovation.</p>
+                    <div class="foot-flex round-icons">
+                        <div class="f1"></div>
+                        <div class="f2"></div>
+                        <div class="f3"></div>
+                        <div class="f4"></div>
+                        <div class="f5"></div>
+                    </div>
+                </div>
+                <div class="foot-2">
+                    <h4>Quick Links</h4>
+                    <div class="foot-links">
+                        <a href="#service">Services</a>
+                        <a href="#philo">Philosophy</a>
+                        <a href="./contact.html">Contact Us</a>
+                    </div>
+                </div>
+                <div class="foot-2">
+                    <h4>Contact</h4>
+                    <div class="foot-links">
+                        <a href="">Email: info@goodai.com</a>
+                        <a href="">Phone: +1 (555) 123-4567</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <a href="">© 2025 goodAI. All rights reserved.</a>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
+

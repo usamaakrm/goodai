@@ -665,7 +665,7 @@ body.open .navigation-menu__labels {
     }
 
     .para {
-        width: 100%;
+        width: auto;
         padding: 0;
         margin: 0;
     }
@@ -677,13 +677,21 @@ body.open .navigation-menu__labels {
     }
 
     .p-container div {
-        width: 70%;
+        width: 80%;
         margin: auto;
         margin-bottom: 2rem;
     }
 
     .service-content {
         width: 100%;
+    }
+
+    .service-item p{
+        color: grey;
+    }
+
+    .service-item h4{
+        margin: 1rem 0;
     }
 
     .service-item {
@@ -722,7 +730,7 @@ body.open .navigation-menu__labels {
         color: white !important;
     }
 
-    svg {
+    .hamburger-menu svg {
         width: 30px;
         height: 30px;
         color: white;

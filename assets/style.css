@@ -761,13 +761,9 @@ body.open .navigation-menu__labels {
         font-size: 1rem !important;
     }
 
-    .contact{
-        width: auto;
-    }
-
     .form-cont{
-        width: auto;
-        margin: 5rem 0;
+        width: 100% !important;
+        margin: 5rem 0 !important;
 
         input{
             width: 100%;

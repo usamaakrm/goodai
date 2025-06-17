@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoodAI</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class=" " id="contacts">
+            <nav class="navigation-menu">
+                <div class="navigation-menu__overlay" onclick="toggleMenuClicked()"></div>
+                <button type="button" class="hamburger-menu" onclick="toggleMenuClicked()">
+                    <span class="material-icons" id="open-icon"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M2 8a1 1 0 0 1 1-1h10.308a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm0-4a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm0 4a1 1 0 0 1 1-1h10.308a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Z" clip-rule="evenodd"/></svg></span>
+                    <span class="material-icons" id="close-icon"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 16 16"><path fill="currentColor" d="m3.5 2.086l4.5 4.5l4.5-4.5L13.914 3.5L9.414 8l4.5 4.5l-1.414 1.414l-4.5-4.5l-4.5 4.5L2.086 12.5l4.5-4.5l-4.5-4.5z"/></svg></span>
+                </button>
+                <a href="./index.html">
+                <img src="./assets/logo.png" alt="" class="log site-identity-logo">
+                </a>
+                <section class="navigation-menu__labels">
+                    <a href="#service" class="lnk">Services</a>
+                    <a href="#philo" class="lnk">Philosophy</a>
+                    <a href="./index.html" class="btn-3" id="black">Home</a>
+                </section>
+            </nav>
+            <script>
+                const toggleMenuClicked = () => {
+                    const body = document.body;
+                    const openIcon = document.getElementById("open-icon");
+                    const closeIcon = document.getElementById("close-icon");
+
+                    body.classList.toggle("open");
+
+
+                    if (body.classList.contains("open")) {
+                        openIcon.style.display = "none";
+                        closeIcon.style.display = "flex";
+                    } else {
+                        openIcon.style.display = "flex";
+                        closeIcon.style.display = "none";
+                    }
+                };
+
+                // Add scroll event to change background
+                window.addEventListener("scroll", () => {
+                    let dams = document.getElementsByClassName("lnk")
+                    const nav = document.querySelector("nav");
+                    if (window.scrollY >= 50) {
+                        nav.classList.add("scrolled");
+                        dams.classList.add("anchar")
+                    } else {
+                        nav.classList.remove("scrolled");
+                    }
+                });
+            </script>
+        </section>
+
+        <section class="contact">
+            <div class="form-cont">
+                <h3>Contact Us</h3>
+                <p>Reach out to learn how goodAI can empower your business.</p>
+                <div class="bar">
+
+                </div>
+                <div class="form-input flex">
+                    <div class="in z1">
+                        <label for="">Name</label><br>
+                        <input type="text" placeholder="Your Name" required minlength="5">
+                    </div>
+                    <div class="in z2">
+                        <label for="">Email</label><br>
+                        <input type="text" placeholder="your.email@example.com" required minlength="5">
+                    </div>
+                </div>
+                <div class="com z3">
+                    <label for="">Company</label><br>
+                    <input type="text" placeholder="Your company name" required minlength="5">
+                </div>
+                <div class="com z4">
+                    <label for="">Subject</label><br>
+                    <input type="text" placeholder="How can we help you?" required minlength="5">
+                </div>
+                <div class="com z5">
+                    <label for="">Message</label><br>
+                <input type="text" placeholder="Tell us about your need..." required minlength="5">
+                </div>
+                <button class="bar-btn">Send Message</button>
+            </div>
+        </section>
+        
+
+        <footer class="footer">
+
+            <div class="flex footer bod">
+                <div class="foot-1">
+                    <img src="./assets/logo.png" alt="" class=" log2 site-identity-logo">
+                    <p>Empowering businesses with practical, ethical AI solutions that drive growth and innovation.</p>
+                    <div class="foot-flex round-icons">
+                        <div class="f1"></div>
+                        <div class="f2"></div>
+                        <div class="f3"></div>
+                        <div class="f4"></div>
+                        <div class="f5"></div>
+                    </div>
+                </div>
+                <div class="foot-2">
+                    <h4>Quick Links</h4>
+                    <div class="foot-links">
+                        <a href="#service">Services</a>
+                        <a href="#philo">Philosophy</a>
+                        <a href="./contact.html">Contact Us</a>
+                    </div>
+                </div>
+                <div class="foot-2">
+                    <h4>Contact</h4>
+                    <div class="foot-links">
+                        <a href="">Email: info@goodai.com</a>
+                        <a href="">Phone: +1 (555) 123-4567</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <a href="">© 2025 goodAI. All rights reserved.</a>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
+

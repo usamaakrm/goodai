@@ -57,12 +57,7 @@ a {
     flex-direction: row;
 }
 
-nav.scrolled {
-    background-color: rgba(255, 255, 255, 0.749);
-    transition: background-color 0.3s ease;
-    margin-top: -4rem;
-    height: 200px;
-}
+/* 1` */
 
 nav {
     background-color: transparent;
@@ -389,23 +384,23 @@ footer {
 }
 
 .f1 {
-    background-color: #4dc9ca;
+    background-color: #0e0034;
 }
 
 .f2 {
-    background-color: #3e87f8;
+    background-color: #731aab;
 }
 
 .f3 {
-    background-color: #9b87f5;
+    background-color: #4353ff;
 }
 
 .f4 {
-    background-color: palevioletred;
+    background-color: #dbe0ff;
 }
 
 .f5 {
-    background-color: orange;
+    background-color: #ffb83d;
 }
 
 .foot-links {
@@ -440,7 +435,7 @@ footer {
     height: 60px;
     margin: 0;
     padding: 0;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     right: 0rem;

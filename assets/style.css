@@ -906,8 +906,9 @@ body.open .navigation-menu__labels {
 } */
 
 .social-icons img{
-    width: 36px;
-    height: 36px;
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
     object-fit: contain;
 }
 
@@ -917,8 +918,8 @@ body.open .navigation-menu__labels {
     display: flex;
 }
 
-.linked{
+/* .linked{
     width: 30px !important;
     height: 30px !important;
     margin-right: 1rem;
-}
+} */

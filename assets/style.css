@@ -904,3 +904,21 @@ body.open .navigation-menu__labels {
     top: 0rem;
     right: 0rem;
 } */
+
+.social-icons img{
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.social-icons{
+    align-items: center;
+    margin-top: .5rem;
+    display: flex;
+}
+
+.linked{
+    width: 30px !important;
+    height: 30px !important;
+    margin-right: 1rem;
+}
